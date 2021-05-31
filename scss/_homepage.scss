@@ -1,0 +1,220 @@
+// Image Section - Right Fixed
+.image-section {
+  background-color: $color-areoblue;
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  &__menu ul {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    width: 45%;
+    transform: translateY(50%);
+    display: flex;
+    justify-content: space-around;
+    li a {
+      color: white;
+    }
+  }
+  img {
+    width: 350px;
+    height: 450px;
+  }
+
+  button {
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    color: white;
+    background-color: #000;
+    padding: 1rem 1.5rem;
+
+  }
+}
+// End of Image Section
+// Introduction Section
+.introduction-section {
+  &__title {
+    margin-bottom: 3rem;
+  }
+
+  &__info {
+    .table {
+      display: flex;
+
+      div {
+        margin-right: 2rem;
+        margin-bottom: 0.5rem;
+      }
+      .titles {
+        font-weight: 700;
+      }
+    }
+  }
+
+  &__contact {
+    ul {
+      width: 50%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    // Hover Animation
+    a {
+      transition: font-weight 0.7s;
+    }
+    a:hover {
+      font-weight: 700;
+    }
+  }
+}
+// End of Introduction Section
+// Skills & Experience Section
+.experience-section {
+  &__title {
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  &__title::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    background-color: $color-spacegrey;
+    width: 50%;
+    margin-left: 2rem;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .skills-list {
+    li {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+// End of Skills and Experience Section
+// About Section
+.about-section {
+  &__title {
+    margin-bottom: 3rem;
+    position: relative;
+  }
+  &__title::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    background-color: $color-spacegrey;
+    width: 55%;
+    margin-left: 2rem;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__content {
+    p {
+      margin-bottom: 2rem;
+    }
+  }
+}
+// End of About Section
+// Work Experience Section
+.work-section {
+  &__title {
+    margin-bottom: 3rem;
+    position: relative;
+  }
+  &__title::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    background-color: $color-spacegrey;
+    width: 25%;
+    margin-left: 2rem;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &__content {
+    margin-left: 1rem;
+
+    .location {
+      margin-bottom: 2rem;
+    }
+
+    h6 {
+      margin-bottom: .5rem;
+    }
+  }
+  }
+// End of Work Experience Section
+.portfolio-section {
+  h6 {
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+
+  &__title {
+    position: relative;
+  }
+&__title::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  background-color: $color-spacegrey;
+  width: 50%;
+  margin-left: 2rem;
+  right: 0;
+  bottom: 50%;
+  transform: translateY(-50%);
+}
+
+.accordian {
+display: flex;
+flex-direction: column;
+.general-info {
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+  padding: .5rem;
+  height: 7vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-top: 1px solid $color-grey-custom;
+  border-bottom: 1px solid $color-grey-custom;
+} 
+.more-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  display: none;
+
+  p {
+    margin-bottom: .5rem;
+  }
+}
+
+.more-info.show {
+  display: block;
+}
+
+.more
+
+a {
+  text-decoration: underline;
+  margin-right: 1rem;
+}
+}
+}
